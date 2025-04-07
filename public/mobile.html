@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop2</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="img/logo.png" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="mobile.html">mobile</a></li>
+                <li><a href="sproduct.html">product</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="ri-shopping-bag-line"></i></a></li>
+                <a href="#" id="close"><i class="ri-close-large-fill"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="ri-shopping-bag-line"></i></a>
+            <i id="bar" class="ri-menu-fold-3-fill"></i>
+        </div>
+    </section>
+
+    <!-- Apple Products -->
+  <h2>Apple</h2>
+  <div class="product-card">
+    <h3 class="product-title">iPhone 15 Pro Max</h3>
+    <img src="img/products/iphone15.jpg" alt="iPhone 15 Pro Max" class="product-image" />
+    <p><strong>Price:</strong> ₹1,59,900</p>
+    <p><strong>Rating:</strong> 4.9 / 5</p>
+    <button onclick="toggleSection('apple15pm-features')">Show Features</button>
+    <button onclick="toggleSection('apple15pm-reviews')">Show Reviews</button>
+    <a href="#" class="buy-btn">Buy Now</a>
+    <ul id="apple15pm-features" class="hidden-section">
+      <li><strong>Processor:</strong> A17 Pro</li>
+      <li><strong>RAM:</strong> 8 GB</li>
+      <li><strong>Storage:</strong> 256 GB</li>
+      <li><strong>Battery:</strong> 4323 mAh</li>
+      <li><strong>Camera:</strong> 48MP + 12MP + 12MP Rear | 12MP Front</li>
+    </ul>
+    <div id="apple15pm-reviews" class="hidden-section">
+      <h4>Reviews:</h4>
+      <p>Incredible performance and dynamic island is awesome!</p>
+    </div>
+  </div>
+
+  <!-- Vivo Products -->
+  <h2>Vivo</h2>
+  <div class="product-card">
+    <h3 class="product-title">Vivo X100 Pro</h3>
+    <img src="img/products/vivo x100.jpg" alt="Vivo X100 Pro" class="product-image" />
+    <p><strong>Price:</strong> ₹89,999</p>
+    <p><strong>Rating:</strong> 4.7 / 5</p>
+    <button onclick="toggleSection('vivo-x100-features')">Show Features</button>
+    <button onclick="toggleSection('vivo-x100-reviews')">Show Reviews</button>
+    <a href="#" class="buy-btn">Buy Now</a>
+    <ul id="vivo-x100-features" class="hidden-section">
+      <li><strong>Processor:</strong> MediaTek Dimensity 9300</li>
+      <li><strong>RAM:</strong> 16 GB</li>
+      <li><strong>Storage:</strong> 512 GB</li>
+      <li><strong>Battery:</strong> 5400 mAh</li>
+      <li><strong>Camera:</strong> 50MP + 50MP + 50MP ZEISS Triple Rear | 32MP Front</li>
+    </ul>
+    <div id="vivo-x100-reviews" class="hidden-section">
+      <h4>Reviews:</h4>
+      <p>Best camera phone in this price range. ZEISS optics are impressive!</p>
+    </div>
+  </div>
+
+  <!-- Oppo Products -->
+  <h2>Oppo</h2>
+  <div class="product-card">
+    <h3 class="product-title">Oppo Find X7 Ultra</h3>
+    <img src="img/products/oppo.jpg" alt="Oppo Find X7 Ultra" class="product-image" />
+    <p><strong>Price:</strong> ₹74,999</p>
+    <p><strong>Rating:</strong> 4.6 / 5</p>
+    <button onclick="toggleSection('oppo-x7-features')">Show Features</button>
+    <button onclick="toggleSection('oppo-x7-reviews')">Show Reviews</button>
+    <a href="#" class="buy-btn">Buy Now</a>
+    <ul id="oppo-x7-features" class="hidden-section">
+      <li><strong>Processor:</strong> Snapdragon 8 Gen 3</li>
+      <li><strong>RAM:</strong> 12 GB</li>
+      <li><strong>Storage:</strong> 256 GB</li>
+      <li><strong>Battery:</strong> 5000 mAh</li>
+      <li><strong>Camera:</strong> Quad 50MP Sony LYTIA | 32MP Front</li>
+    </ul>
+    <div id="oppo-x7-reviews" class="hidden-section">
+      <h4>Reviews:</h4>
+      <p>Excellent display and photography experience. Flagship build quality.</p>
+    </div>
+  </div>
+
+  <!-- Samsung Products -->
+  <h2>Samsung</h2>
+  <div class="product-card">
+    <h3 class="product-title">Samsung Galaxy S23 Ultra</h3>
+    <img src="img/products/samsung.jpg" alt="Samsung Galaxy S23 Ultra" class="product-image" />
+    <p><strong>Price:</strong> ₹1,24,999</p>
+    <p><strong>Rating:</strong> 4.8 / 5</p>
+    <button onclick="toggleSection('s23-ultra-features')">Show Features</button>
+    <button onclick="toggleSection('s23-ultra-reviews')">Show Reviews</button>
+    <a href="#" class="buy-btn">Buy Now</a>
+    <ul class="product-features hidden-section" id="s23-ultra-features">
+      <li><strong>Processor:</strong> Snapdragon 8 Gen 2</li>
+      <li><strong>RAM:</strong> 12 GB</li>
+      <li><strong>Storage:</strong> 256 GB</li>
+      <li><strong>Battery:</strong> 5000 mAh</li>
+      <li><strong>Camera:</strong> 200MP + 12MP + 10MP Triple Rear | 12MP Front</li>
+    </ul>
+    <div class="product-reviews hidden-section" id="s23-ultra-reviews">
+      <h4>Reviews:</h4>
+      <p>Excellent camera and performance!</p>
+    </div>
+  </div>
+
+  <!-- JS Script -->
+  <script src="script.js"></script>
+</body>
+</html>
