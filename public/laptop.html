@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop1</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="img/logo.png" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mobile.html">mobile</a></li>
+                <li><a href="sproduct.html">product</a></li>
+                <li><a class="active" href="laptop.html">laptop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="ri-shopping-bag-line"></i></a></li>
+                <a href="#" id="close"><i class="ri-close-large-fill"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="ri-shopping-bag-line"></i></a>
+            <i id="bar" class="ri-menu-fold-3-fill"></i>
+        </div>
+    </section>
+
+  <!-- Dell Laptops -->
+  <h2>Dell</h2>
+  <div class="product-card">
+    <h3 class="product-title">Dell XPS 13</h3>
+    <img src="img/dell-xps13.jpg" alt="Dell XPS 13" class="product-image">
+    <p><strong>Price:</strong> ₹1,25,999</p>
+    <p><strong>Rating:</strong> 4.8 / 5</p>
+    <button onclick="toggleSection('dell-xps13-features')">Show Features</button>
+    <button onclick="toggleSection('dell-xps13-reviews')">Show Reviews</button>
+    <a href="#" class="buy-btn">Buy Now</a>
+    <ul id="dell-xps13-features" class="hidden-section">
+      <li><strong>Processor:</strong> Intel Core i7 12th Gen</li>
+      <li><strong>RAM:</strong> 16 GB</li>
+      <li><strong>Storage:</strong> 512 GB SSD</li>
+      <li><strong>Display:</strong> 13.4" 4K Ultra HD</li>
+      <li><strong>Battery:</strong> Up to 12 hours</li>
+      <li><strong>Build:</strong> CNC-machined aluminum</li>
+      <li><strong>Software:</strong> Windows 11</li>
+    </ul>
+    <div id="dell-xps13-reviews" class="hidden-section">
+      <h4>Reviews:</h4>
+      <p>Incredible build quality and stunning display. Perfect for professionals!</p>
+      <p>Battery life exceeds expectations, and the performance is top-notch.</p>
+    </div>
+  </div>
+
+  <!-- HP Laptops -->
+  <h2>HP</h2>
+  <div class="product-card">
+    <h3 class="product-title">HP Spectre x360</h3>
+    <img src="img/hp-spectre.jpg" alt="HP Spectre x360" class="product-image">
+    <p><strong>Price:</strong> ₹1,29,999</p>
+    <p><strong>Rating:</strong> 4.7 / 5</p>
+    <button onclick="toggleSection('hp-spectre-features')">Show Features</button>
+    <button onclick="toggleSection('hp-spectre-reviews')">Show Reviews</button>
+    <a href="#" class="buy-btn">Buy Now</a>
+    <ul id="hp-spectre-features" class="hidden-section">
+      <li><strong>Processor:</strong> Intel Core i7 12th Gen</li>
+      <li><strong>RAM:</strong> 16 GB</li>
+      <li><strong>Storage:</strong> 1 TB SSD</li>
+      <li><strong>Display:</strong> 13.3" OLED Touchscreen</li>
+      <li><strong>Battery:</strong> Up to 10 hours</li>
+      <li><strong>Build:</strong> Premium gem-cut design</li>
+      <li><strong>Software:</strong> Windows 11</li>
+    </ul>
+    <div id="hp-spectre-reviews" class="hidden-section">
+      <h4>Reviews:</h4>
+      <p>Versatile and lightweight with amazing performance.</p>
+      <p>Display quality is phenomenal, and the convertible design is a bonus!</p>
+    </div>
+  </div>
+
+  <!-- Apple Laptops -->
+  <h2>Apple</h2>
+  <div class="product-card">
+    <h3 class="product-title">MacBook Pro 14"</h3>
+    <img src="img/macbook-pro.jpg" alt="MacBook Pro 14" class="product-image">
+    <p><strong>Price:</strong> ₹2,10,999</p>
+    <p><strong>Rating:</strong> 4.9 / 5</p>
+    <button onclick="toggleSection('macbook-pro-features')">Show Features</button>
+    <button onclick="toggleSection('macbook-pro-reviews')">Show Reviews</button>
+    <a href="#" class="buy-btn">Buy Now</a>
+    <ul id="macbook-pro-features" class="hidden-section">
+      <li><strong>Processor:</strong> Apple M2 Pro</li>
+      <li><strong>RAM:</strong> 16 GB</li>
+      <li><strong>Storage:</strong> 1 TB SSD</li>
+      <li><strong>Display:</strong> 14" Liquid Retina XDR</li>
+      <li><strong>Battery:</strong> Up to 17 hours</li>
+      <li><strong>Build:</strong> Recycled aluminum enclosure</li>
+      <li><strong>Software:</strong> macOS Ventura</li>
+    </ul>
+    <div id="macbook-pro-reviews" class="hidden-section">
+      <h4>Reviews:</h4>
+      <p>Unmatched performance and battery life. Perfect for creators!</p>
+      <p>Liquid Retina XDR display is the best in its class!</p>
+    </div>
+  </div>
+
+  <!-- Asus Laptops -->
+  <h2>Asus</h2>
+  <div class="product-card">
+    <h3 class="product-title">Asus ROG Zephyrus G14</h3>
+    <img src="img/asus-rog.jpg" alt="Asus ROG Zephyrus G14" class="product-image">
+    <p><strong>Price:</strong> ₹1,45,999</p>
+    <p><strong>Rating:</strong> 4.8 / 5</p>
+    <button onclick="toggleSection('asus-rog-features')">Show Features</button>
+    <button onclick="toggleSection('asus-rog-reviews')">Show Reviews</button>
+    <a href="#" class="buy-btn">Buy Now</a>
+    <ul id="asus-rog-features" class="hidden-section">
+      <li><strong>Processor:</strong> AMD Ryzen 9 6900HS</li>
+      <li><strong>RAM:</strong> 32 GB</li>
+      <li><strong>Storage:</strong> 1 TB SSD</li>
+      <li><strong>Display:</strong> 14" QHD 120Hz</li>
+      <li><strong>Battery:</strong> Up to 9 hours</li>
+      <li><strong>Build:</strong> Magnesium alloy chassis</li>
+      <li><strong>Software:</strong> Windows 11</li>
+    </ul>
+    <div id="asus-rog-reviews" class="hidden-section">
+      <h4>Reviews:</h4>
+      <p>Excellent for gaming and multitasking. Build quality is solid!</p>
+      <p>QHD display and high refresh rate make it a top gaming choice.</p>
+    </div>
+  </div>
+  <!-- JS Script -->
+  <script src="script.js"></script>
+</body>
+</html>
