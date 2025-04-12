@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shop2</title>
+    <title>shop1</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css">
@@ -31,196 +31,241 @@
             <i id="bar" class="ri-menu-fold-3-fill"></i>
         </div>
     </section>
-
-    <section id="prodetails" class="section-p1">
-        <div class="single-pro-image">
-            <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
-            <div class="small-img-group">
-                <div class="small-img-col">
-                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
-                </div>
-            </div>
+    <h2>SmartWatches</h2>
+    <div class="product-card">
+        <h3 class="product-title">Fire-Boltt Phoenix AMOLED</h3>
+        <img src="img/products/Fire-Boltt_Phoenix_AMOLED.jpg" alt="Fire-Boltt Phoenix" class="product-image" />
+        <p><strong>Price:</strong> ₹1,299</p>
+        <p><strong>Rating:</strong> 4.5 / 5</p>
+        <button onclick="toggleSection('phoenix-features')">Show Features</button>
+        <button onclick="toggleSection('phoenix-reviews')">Show Reviews</button>
+        <a href="#" class="buy-btn">Buy Now</a>
+        <ul id="phoenix-features" class="hidden-section">
+          <li><strong>Display:</strong> 1.43" AMOLED Always-On</li>
+          <li><strong>Battery:</strong> Up to 7 Days</li>
+          <li><strong>Features:</strong> Bluetooth Calling, 120+ Sports Modes</li>
+          <li><strong>Health:</strong> SpO2, HR, Sleep Monitoring</li>
+          <li><strong>Build:</strong> Lightweight Metal Body</li>
+        </ul>
+        <div id="phoenix-reviews" class="hidden-section">
+          <h4>Reviews:</h4>
+          <p>Impressive AMOLED screen and calling feature at this price.</p>
+          <p>Battery lasts well, great for daily use and workouts.</p>
         </div>
-        <div class="single-pro-details">
-            <h6>Home / T-Shirt</h6>
-            <h4>Men's Fashion T SHirt</h4>
-            <h2>$139.00</h2>
-            <select>
-                <option>Select Size</option>
-                <option>Xl</option>
-                <option>XXL</option>
-                <option>Small</option>
-                <option>Large</option>
-            </select>
-            <input type="number" value="1">
-            <button class="normal">Add To Cart</button>
-            <h4>Product Details</h4>
-            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, ipsum. Eaque, aliquid consequatur? Minus sit, quasi ipsa quia molestiae quod doloribus dolorem illo fuga hic aliquid, enim quas. Deserunt, quis unde, veniam nihil labore similique doloremque sequi, veritatis placeat fuga sunt aspernatur a aperiam sit dolorem facilis iusto quasi tempora.</span>
+      </div>
+      
+      <div class="product-card">
+        <h3 class="product-title">boAt Ultima Chronos</h3>
+        <img src="img/products/boAt_Ultima_Chronos.jpg" alt="boAt Ultima Chronos" class="product-image" />
+        <p>
+          <strong>Price:</strong>
+          <span style="color: red;">₹3,280</span>
+          <span style="text-decoration: line-through; color: #777;">₹3,999</span>
+          <span style="color: green;">(18% OFF)</span>
+        </p>
+        <p><strong>Rating:</strong> 4.5 / 5</p>
+        <button onclick="toggleSection('boat-features')">Show Features</button>
+        <button onclick="toggleSection('boat-reviews')">Show Reviews</button>
+        <a href="#" class="buy-btn">Buy Now</a>
+        <ul id="boat-features" class="hidden-section">
+          <li><strong>Display:</strong> 1.96" AMOLED Curved</li>
+          <li><strong>Calling:</strong> Advanced BT Calling with Dialpad</li>
+          <li><strong>Design:</strong> Metal Body with Leather Strap</li>
+          <li><strong>Modes:</strong> 100+ Sports Modes, Voice Assistant</li>
+          <li><strong>Health:</strong> HR, SpO2, Stress Monitoring</li>
+        </ul>
+        <div id="boat-reviews" class="hidden-section">
+          <h4>Reviews:</h4>
+         <p>Premium design and smooth interface. Love the strap quality.</p>
+          <p>Calling feature is clear. AMOLED looks stunning outdoors.</p>
         </div>
-    </section>
-
-    <section id="product1" class="section-p1">
-        <h2>Featured Products</h2>
-        <p>Summer Collection New Modern Design</p>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="img/products/n1.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shiirts</h5>
-                    <div class="star">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="ri-shopping-cart-2-line cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="img/products/n2.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shiirts</h5>
-                    <div class="star">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="ri-shopping-cart-2-line cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="img/products/n3.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shiirts</h5>
-                    <div class="star">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="ri-shopping-cart-2-line cart"></i></a>
-            </div>
-            <div class="pro">
-                <img src="img/products/n4.jpg" alt="">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shiirts</h5>
-                    <div class="star">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="ri-shopping-cart-2-line cart"></i></a>
-            </div>
-           
-    </section>
-
-    <section id="newsletter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+      </div>
+    <h2>Headphones</h2>  
+    <div class="product-card">
+        <h3 class="product-title">boAt Rockerz 450</h3>
+        <img src="img/products/boAt_Rockerz_450.jpg" alt="boAt Rockerz 450" class="product-image" />
+        <p><strong>Price:</strong> ₹2,299</p>
+        <p><strong>Rating:</strong> 3.8 / 5</p>
+        <button onclick="toggleSection('rockerz450-features')">Show Features</button>
+        <button onclick="toggleSection('rockerz450-reviews')">Show Reviews</button>
+        <a href="#" class="buy-btn">Buy Now</a>
+        <ul id="rockerz450-features" class="hidden-section">
+          <li><strong>Driver Size:</strong> 40mm</li>
+          <li><strong>Battery:</strong> Up to 15 Hours</li>
+          <li><strong>Connectivity:</strong> Bluetooth v5.0</li>
+          <li><strong>Design:</strong> Lightweight & Ergonomic</li>
+          <li><strong>Controls:</strong> Integrated Multifunction Buttons</li>
+        </ul>
+        <div id="rockerz450-reviews" class="hidden-section">
+          <h4>Reviews:</h4>
+          <p>Great value for money. Sound quality and bass are impressive.</p>
+          <p>Very comfortable for long usage. Battery backup is strong.</p>
         </div>
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
+      </div>
+    9
+      <div class="product-card">
+        <h3 class="product-title">Sony WH-CH520</h3>
+        <img src="img/products/Sony_WH-CH520.jpg" alt="Sony WH-CH520" class="product-image" />
+        <p>
+          <strong>Price:</strong>
+          <span style="color: red;">₹3,840</span>
+          <span style="text-decoration: line-through; color: #777;">₹4,800</span>
+          <span style="color: green;">(20% OFF)</span>
+        </p>
+        <p><strong>Rating:</strong> 4.9 / 5</p>
+        <button onclick="toggleSection('sony520-features')">Show Features</button>
+        <button onclick="toggleSection('sony520-reviews')">Show Reviews</button>
+        <a href="#" class="buy-btn">Buy Now</a>
+        <ul id="sony520-features" class="hidden-section">
+          <li><strong>Battery:</strong> 50 Hours Playback</li>
+          <li><strong>Bluetooth:</strong> Multipoint Connectivity</li>
+          <li><strong>Audio:</strong> DSEE & EQ Customization</li>
+          <li><strong>Build:</strong> Lightweight & Foldable</li>
+          <li><strong>Voice Assistant:</strong> Google & Siri Support</li>
+        </ul>
+        <div id="sony520-reviews" class="hidden-section">
+          <h4>Reviews:</h4>
+          <p>Crisp sound with superb battery life. Very light and stylish.</p>
+          <p>Good mic quality and quick charge support is a bonus.</p>
         </div>
-    </section>
-
-    <footer class="section-p1">
-        <div class="col">
-            <img class="logo" src="img/logo.png" alt="">
-            <h4>Contact</h4>
-            <p><strong>Address: </strong>Lorem ipsum dolor, sit amet consectetur adipisicing</p>
-            <p><strong>Phone: </strong>xxxxxxxxxxx/xxxxxxxxxxx</p>
-            <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
-            <div class="follow">
-                <h4>Follow us</h4>
-                <div class="icon">
-                    <i class="ri-facebook-fill"></i>
-                    <i class="ri-twitter-x-line"></i>
-                    <i class="ri-instagram-line"></i>
-                    <i class="ri-pinterest-line"></i>
-                    <i class="ri-youtube-fill"></i>
-                </div>
-            </div>
+      </div>
+    <h2>Speakers</h2> 
+    <div class="product-card">
+        <h3 class="product-title">boAt Stone 350</h3>
+        <img src="img/products/boAt_Stone_350.jpg" alt="boAt Stone 350" class="product-image" />
+        <p><strong>Price:</strong> ₹1,499</p>
+        <p><strong>Rating:</strong> 4.0 / 5</p>
+        <button onclick="toggleSection('stone350-features')">Show Features</button>
+        <button onclick="toggleSection('stone350-reviews')">Show Reviews</button>
+        <a href="#" class="buy-btn">Buy Now</a>
+        <ul id="stone350-features" class="hidden-section">
+          <li><strong>Output:</strong> 10W RMS Stereo Sound</li>
+          <li><strong>Battery:</strong> Up to 12 Hours</li>
+          <li><strong>Waterproof:</strong> IPX7 Rated</li>
+          <li><strong>Connectivity:</strong> Bluetooth v5.0, AUX</li>
+          <li><strong>Design:</strong> Rugged Fabric Build</li>
+        </ul>
+        <div id="stone350-reviews" class="hidden-section">
+          <h4>Reviews:</h4>
+          <p>Rugged and portable. Loud enough for outdoor use.</p>
+          <p>Battery lasts long and bass is decent for the size.</p>
         </div>
-
-        <div class="col">
-            <h4>About</h4>
-            <a href="#">About us</a>
-            <a href="#">Delivery Informations</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+      </div>
+      
+      <div class="product-card">
+        <h3 class="product-title">JBL Go 3</h3>
+        <img src="img/products/JBL_Go_3.jpg" alt="JBL Go 3" class="product-image" />
+        <p>
+          <strong>Price:</strong>
+          <span style="color: red;">₹2,250</span>
+          <span style="text-decoration: line-through; color: #777;">₹4,500</span>
+          <span style="color: green;">(50% OFF)</span>
+        </p>
+        <p><strong>Rating:</strong> 4.0 / 5</p>
+        <button onclick="toggleSection('jblgo3-features')">Show Features</button>
+        <button onclick="toggleSection('jblgo3-reviews')">Show Reviews</button>
+        <a href="#" class="buy-btn">Buy Now</a>
+        <ul id="jblgo3-features" class="hidden-section">
+          <li><strong>Output:</strong> JBL Pro Sound</li>
+          <li><strong>Waterproof:</strong> IP67 Rated</li>
+          <li><strong>Battery:</strong> 5 Hours Playback</li>
+          <li><strong>Portability:</strong> Ultra-Compact with Strap</li>
+          <li><strong>Build:</strong> Durable & Stylish</li>
+        </ul>
+        <div id="jblgo3-reviews" class="hidden-section">
+          <h4>Reviews:</h4>
+          <p>Sound is crystal clear. Super compact and perfect for travel.</p>
+          <p>Love the design. Waterproof feature is a big plus.</p>
         </div>
-
-        <div class="col">
-            <h4>About</h4>
-            <a href="#">My Account</a>
-            <a href="#">Sign In</a>
-            <a href="#">View Cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track My Order</a>
-            <a href="#">Help</a>
+      </div>
+    <h2>Television</h2>
+    <div class="product-card">
+        <h3 class="product-title">LG 50" 4K Ultra HD Smart LED TV</h3>
+        <img src="img/products/LG_50_4K_Ultra_HD_Smart_LED_TV.jpg" alt="LG 50-inch 4K TV" class="product-image" />
+        <p><strong>Price:</strong> ₹40,990</p>
+        <p><strong>Rating:</strong> 4.5 / 5</p>
+        <button onclick="toggleSection('lg50tv-features')">Show Features</button>
+        <button onclick="toggleSection('lg50tv-reviews')">Show Reviews</button>
+        <a href="#" class="buy-btn">Buy Now</a>
+        <ul id="lg50tv-features" class="hidden-section">
+          <li><strong>Display:</strong> 4K Ultra HD (3840x2160)</li>
+          <li><strong>Smart Features:</strong> WebOS, ThinQ AI</li>
+          <li><strong>Sound:</strong> 20W DTS Virtual:X</li>
+          <li><strong>Ports:</strong> 3 HDMI, 2 USB</li>
+          <li><strong>Remote:</strong> Magic Remote Support</li>
+        </ul>
+        <div id="lg50tv-reviews" class="hidden-section">
+          <h4>Reviews:</h4>
+          <p>Display clarity and color contrast are impressive.</p>
+          <p>WebOS runs smooth and UI is user-friendly.</p>
         </div>
-
-        <div class="col install">
-            <h4>Install App</h4>
-            <p>From App Store or Google Play</p>
-            <div class="row">
-                <img src="img/pay/app.jpg" alt="">
-                <img src="img/pay/play.jpg" alt="">
-            </div>
-            <p>Secured Payment Gateways</p>
-            <img src="img/pay/pay.png" alt="">
+      </div>
+      <div class="product-card">
+        <h3 class="product-title">Samsung 55" Crystal 4K UHD Smart TV</h3>
+        <img src="img/products/Samsung_55_Crystal_4K_UHD_Smart_TV.jpg" alt="Samsung 55-inch 4K TV" class="product-image" />
+        <p><strong>Price:</strong> ₹69,490</p>
+        <p><strong>Rating:</strong> 4.0 / 5</p>
+        <button onclick="toggleSection('samsungtv-features')">Show Features</button>
+        <button onclick="toggleSection('samsungtv-reviews')">Show Reviews</button>
+        <a href="#" class="buy-btn">Buy Now</a>
+        <ul id="samsungtv-features" class="hidden-section">
+          <li><strong>Display:</strong> 4K UHD with PurColor and HDR</li>
+          <li><strong>Smart Features:</strong> Tizen OS, Voice Assistant</li>
+          <li><strong>Sound:</strong> 20W Dolby Digital Plus</li>
+          <li><strong>Processor:</strong> Crystal 4K Processor</li>
+          <li><strong>Ports:</strong> 3 HDMI, 1 USB, Ethernet</li>
+        </ul>
+        <div id="samsungtv-reviews" class="hidden-section">
+          <h4>Reviews:</h4>
+          <p>Great display quality with deep blacks and vivid colors.</p>
+          <p>Seamless smart features and responsive interface.</p>
         </div>
-        <div class="copyright">
-            <p>© 2025 MistSoft. All Rights Reserved.</p>
+      </div>
+      
+     <h2>Camera</h2>    
+     <div class="product-card">
+        <h3 class="product-title">Nikon D5600 DSLR Camera</h3>
+        <img src="img/products/nikoncam.jpg" alt="Nikon D5600" class="product-image" />
+        <p><strong>Price:</strong> ₹52,500</p>
+        <p><strong>Rating:</strong> 4.9 / 5</p>
+        <button onclick="toggleSection('nikon5600-features')">Show Features</button>
+        <button onclick="toggleSection('nikon5600-reviews')">Show Reviews</button>
+        <a href="#" class="buy-btn">Buy Now</a>
+        <ul id="nikon5600-features" class="hidden-section">
+          <li><strong>Sensor:</strong> 24.2 MP DX-format CMOS</li>
+          <li><strong>Lens:</strong> 18-55mm VR Kit</li>
+          <li><strong>Video:</strong> Full HD 1080p at 60fps</li>
+          <li><strong>Touchscreen:</strong> 3.2" Vari-angle LCD</li>
+          <li><strong>Connectivity:</strong> SnapBridge, Wi-Fi, Bluetooth</li>
+        </ul>
+        <div id="nikon5600-reviews" class="hidden-section">
+          <h4>Reviews:</h4>
+          <p>Excellent image quality and easy manual controls.</p>
+          <p>Perfect for photography learners and hobbyists.</p>
         </div>
-    </footer>
-
-    <script>
-       var MainImg = document.getElementById("MainImg"); 
-       var smallimg = document.getElementsByClassName("small-img");
-
-       smallimg[0].onclick = function(){
-        MainImg.src = smallimg[0].src;
-       }
-       smallimg[1].onclick = function(){
-        MainImg.src = smallimg[1].src;
-       }
-       smallimg[2].onclick = function(){
-        MainImg.src = smallimg[2].src;
-       }
-       smallimg[3].onclick = function(){
-        MainImg.src = smallimg[3].src;
-       }
-    </script>
-
+      </div>
+      <div class="product-card">
+        <h3 class="product-title">Canon EOS M50 Mark II Mirrorless Camera</h3>
+        <img src="img/products/Canon_EOS_M50_Mark_II_Mirrorless_Camera.jpg" alt="Canon EOS M50 Mark II" class="product-image" />
+        <p><strong>Price:</strong> ₹53,999</p>
+        <p><strong>Rating:</strong> 3.5/ 5</p>
+        <button onclick="toggleSection('canonm50-features')">Show Features</button>
+        <button onclick="toggleSection('canonm50-reviews')">Show Reviews</button>
+        <a href="#" class="buy-btn">Buy Now</a>
+        <ul id="canonm50-features" class="hidden-section">
+          <li><strong>Sensor:</strong> 24.1 MP APS-C CMOS</li>
+          <li><strong>Video:</strong> 4K recording with Dual Pixel AF</li>
+          <li><strong>Display:</strong> 3.0" Vari-angle Touchscreen</li>
+          <li><strong>Connectivity:</strong> Wi-Fi, Bluetooth, Webcam Support</li>
+          <li><strong>Lens Kit:</strong> 15-45mm IS STM Lens</li>
+        </ul>
+        <div id="canonm50-reviews" class="hidden-section">
+          <h4>Reviews:</h4>
+          <p>Ideal for vloggers and YouTube creators. Fast autofocus.</p>
+          <p>Excellent image stabilization and lightweight design.</p>
+        </div>
+      </div>
+       
     <script src="script.js"></script>
 </body>
 
