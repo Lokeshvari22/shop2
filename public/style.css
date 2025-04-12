@@ -710,14 +710,22 @@ object-fit: cover;
     z-index: -9;
 }
 /*mobile*/
+.container {
+    text-align: center; /* Centers inline-block elements */
+}
 .product-card {
+    display: inline-block; /* Aligns cards horizontally */
+    vertical-align: top;
     border: 1px solid #ccc;
     padding: 15px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 8px;
     max-width: 300px;
   }
-  
+  h2 + .product-card + .product-card + .product-card {
+    display: inline-block;
+    vertical-align: top;
+  }
   .product-image {
     width: 100%;
     height: auto;
